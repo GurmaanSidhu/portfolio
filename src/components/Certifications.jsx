@@ -13,11 +13,43 @@ const certifications = [
   },
   {
     name: "PostgreSQL",
-    issuer: "University of Michigan"
+    issuer: "University of Michigan (Coursera)"
   },
   {
     name: "Object Oriented Programming",
     issuer: "Lovely Professional University"
+  },
+  {
+    name: "Developing AI Applications with Python and Flask",
+    issuer: "IBM (Coursera)"
+  },
+  {
+    name: "Tailwind CSS Practice Projects",
+    issuer: "Scrimba (Coursera)"
+  },
+  {
+    name: "A Guide to Machine Learning with Data Science",
+    issuer: "CipherSchools"
+  },
+  {
+    name: "Java Programming",
+    issuer: "iamNeo"
+  },
+  {
+    name: "Master JavaScript from Basics to Advanced",
+    issuer: "Udemy"
+  },
+  {
+    name: "C Programming",
+    issuer: "CipherSchools"
+  },
+  {
+    name: "Computer Communications (4 courses)",
+    issuer: "University of Colorado (Coursera)"
+  },
+  {
+    name: "Introduction to Hardware and Operating System",
+    issuer: "IBM (Coursera)"
   }
 ];
 
@@ -32,7 +64,7 @@ const Certifications = () => {
 
         <div className="cert-grid">
           {certifications.map((cert, index) => (
-            <motion.div 
+            <motion.div
               key={index}
               className="cert-card card"
               initial={{ opacity: 0, y: 15 }}
